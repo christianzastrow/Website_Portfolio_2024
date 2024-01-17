@@ -1,0 +1,184 @@
+body {
+  background-image: url(https://images.unsplash.com/photo-1648878136408-c45f1ae995a9?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: white;
+}
+
+h5 {
+  font-size: 20px;
+}
+header {
+  padding: 50px;
+}
+
+#text-light {
+  color: #a7a3a3; /* This is a light grey color */
+}
+
+#invisible-nav {
+  position: fixed;
+  left: 50%; /* Center the navbar */
+  transform: translateX(
+    -50%
+  ); /* Align the center of the navbar with the center of the screen */
+  bottom: 25px; /* 15px from the bottom */
+  background-color: rgba(0,0,0,.3); /* dark background, assuming you want to use the Bootstrap dark color */
+  border-radius: 15px; /* Rounded corners */
+  z-index: 100; /* Keeps the nav bar above other elements */
+  padding: 5px; /* Optional: add padding inside the navbar */
+  display: flex; /* Use flexbox to align links */
+  gap: 5px; /* Optional: add gaps between links */
+  justify-content: center; /* Center the flex items (links) */
+  font-size: large;
+  flex-wrap: nowrap;
+  
+}
+
+#invisible-nav .nav-link {
+  color: white; /* Set the color of the nav links to white */
+  text-decoration: none; /* Removes the underline from links */
+  padding: 10px 20px;
+}
+
+/* Add a CSS class for the clicked elements */
+.nav-link.clicked {
+  background-color: cornflowerblue; /* Change the background color as desired */
+  color: white; /* Set the text color to white */
+  border-radius: 50%; /* Create a circular background */
+  padding: 10px 20px;
+  transition: all 0.3s; /* Add a smooth transition effect */
+}
+
+/* Reset the styles when the mouse is not clicking anymore (optional) */
+.nav-link:not(.clicked):hover {
+  cursor: pointer;
+  opacity: 0.7; /* You can change the opacity on hover */
+}
+
+
+
+#invisible-nav .nav-link:hover {
+  text-decoration: cornflowerblue;
+}
+
+.outlined-button {
+  padding: 10px 15px; /* Generous padding for a larger, more clickable area */
+  border: 2px solid #2367b4; /* Solid border with a blue color */
+  background-color: #2367b4; /* Transparent background to start with */
+  color: white; /* White text color for contrast */
+  font-size: 18px; /* Larger font size for better readability */
+  font-weight: bold; /* Make the text bold */
+  border-radius: 8px; /* Slightly more rounded corners for a modern look */
+  cursor: pointer; /* Change cursor to pointer when hovering over the button */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  text-transform: uppercase; /* Uppercase text for a more button-like appearance */
+  letter-spacing: 1px; /* Add some spacing between letters */
+}
+
+.outlined-button:hover {
+  color: black; /* Blue text color on hover for a nice effect */
+  background-color: white; /* White background on hover */
+  border-color: white; /* Keep the border color consistent on hover */
+}
+
+/* Fix for the h6 font size */
+h6 {
+  font-size: 16px; /* Correct syntax for setting font size */
+}
+
+/* Additional styles for header to center the content */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the top */
+  padding-top: 40px; /* Add padding at the top of the header */
+  padding-bottom: 20px; /* Add padding at the bottom of the header for spacing */
+}
+
+/* Ensure the header container is not adding extra space */
+.header_container {
+  margin-bottom: 10px; /* Adjust the space below the header container if needed */
+}
+
+.rounded.circle img {
+  border-radius: 50%; /* This creates the circular shape */
+  width: 300px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed; should be equal to width for a perfect circle */
+  object-fit: cover; /* This will cover the area of the circle without stretching the image */
+}
+
+.me {
+  margin-top: 50px;
+}
+
+#about {
+  margin-top: -25px;
+}
+
+.rounded-container {
+  background-color: rgb(
+    54,
+    60,
+    66
+  ); /* Dark background with slight transparency */
+  border-radius: 15px;
+  padding: 40px;
+  margin: 20px auto; /* Centered with margin */
+  max-width: 100%; /* Max width to avoid too wide containers */
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* You might want to adjust the footer separately */
+footer#footer .rounded-container {
+  padding: 20px;
+  max-width: 100%; /* Footer container can take full width */
+}
+
+.rounded-cube {
+  width: 80%; /* Full width of the column */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 15px; /* Rounded corners */
+  object-fit: cover; /* Cover the frame without stretching */
+  margin-bottom: 20px; /* Spacing below the image */
+}
+
+.button-row {
+  display: flex; /* Align buttons in a row */
+  justify-content: space-between; /* Space out buttons evenly */
+}
+
+.about-button {
+  flex-basis: 30%; /* Each button takes up approximately 30% of the row */
+  padding: 10px 15px; /* Padding inside the button */
+  margin: 0; /* Remove margin between buttons */
+  border: 1px solid #2367b4; /* Border color */
+  background-color: #2367b4; /* Button background color */
+  color: white; /* Button text color */
+  border-radius: 5px; /* Rounded corners for the buttons */
+  cursor: pointer; /* Cursor changes to pointer on hover */
+  text-transform: uppercase; /* Uppercase text */
+  font-weight: bold; /* Bold font for the text */
+  text-align: center; /* Center the text inside the button */
+}
+
+.about-button:hover {
+  background-color: transparent; /* Background color on hover */
+  color: white ; /* Text color on hover hi */
+}
+
+#home {
+  margin-bottom: 110px;
+}
